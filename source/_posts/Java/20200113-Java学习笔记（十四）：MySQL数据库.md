@@ -10,8 +10,8 @@ author: foochane
 toc: true
 mathjax: true
 top: true
-top_img: /images/background/16.jpg
-cover: 
+top_img: /images/banner/0.jpg
+cover: /images/cover/0.jpg
 ---
 
 

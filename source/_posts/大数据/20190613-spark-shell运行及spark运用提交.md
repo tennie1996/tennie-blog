@@ -12,7 +12,8 @@ author: foochane
 toc: true
 mathjax: false
 top: false
-cover: false
+top_img: /images/banner/0.jpg
+cover: /images/cover/8.jpg
 ---
 
 >spark-shell spark-submit 程序运行 运用提交 运用部署

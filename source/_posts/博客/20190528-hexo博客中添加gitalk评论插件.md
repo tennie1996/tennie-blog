@@ -3,13 +3,14 @@ title: hexo博客中添加gitalk评论插件
 summary: 关键词： hexo 博客 gitalk 评论 插件
 author: foochane
 top: false
-cover: false
 categories: 博客
 date: 2019-05-28 20:39
 urlname: 2019052801
 tags:
   - hexo
   - 博客
+top_img: /images/banner/0.jpg
+cover: /images/cover/1.jpg
 ---
 
 

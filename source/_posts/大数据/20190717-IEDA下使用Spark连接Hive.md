@@ -12,7 +12,8 @@ author: foochane
 toc: true
 mathjax: false
 top: false
-cover: false
+top_img: /images/banner/0.jpg
+cover: /images/cover/1.jpg
 ---
 
 ## 1 Spark配置

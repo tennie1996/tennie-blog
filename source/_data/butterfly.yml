@@ -100,11 +100,11 @@ avatar: /images/site/avatar.jpg
 
 # the banner image of index
 # 首页背景图
-index_img: /images/background/17.jpg
+index_img: /images/banner/1.jpg
 
 # if the banner of page not setting,it will show the top_img
 # 默认背景图，如果归档、标签、分类、友链、关于没有设背景图，则使用默认背景图
-default_top_img: /images/background/17.jpg
+default_top_img: /images/banner/1.jpg
 
 # the default cover of the post
 # 文章封面默认配置多张是随机选一张
@@ -358,10 +358,11 @@ tag_ui: # 留空或index
 # 圖片格式 background: url(http://xxxxxx.com/xxx.jpg)
 # 顔色 background: '#49B202'
 # 留空 顯示白色
-background: '#F5F5F5'
+# 所有卡片后面，最底层的颜色
+background: '#FFFAFA'
 
 # footer是否顯示圖片背景(與top_img一致)
-footer_bg: false
+footer_bg: true
 
 # 背景特效
 # 避免卡頓，建議只開啓一個

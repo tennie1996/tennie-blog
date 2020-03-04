@@ -7,8 +7,8 @@
   padding: 1rem 0 2rem .5rem
   width: $sidebar-width
   height: 100%
-  background: $sidebar-background  //目录背景颜色
-  box-shadow: -.25rem 0 .25rem rgba(232, 237, 250, .6) inset
+  background: rgb(65, 65, 65)  //目录背景颜色
+  box-shadow: -.25rem 0 .25rem rgb(65, 65, 65) inset  //目录右侧边缘阴影
   opacity: .9
   transition: ease-in-out .4s
 
@@ -25,6 +25,7 @@
       padding-right: .5rem
       text-align: center
       font-size: unit(.9 * $rem, 'px')
+      color: rgb(222,231,333)  //“目录”这两个字的颜色（手动添加的）
 
     .toc-link
       display: block
@@ -32,10 +33,11 @@
       border-right: 3px solid transparent
       text-decoration: none
       transition: all .2s ease-in-out
-      color: rgba(0,0,0,1)  //目录字体颜色（手动添加的）
+      color: rgb(222,231,333)  //目录字体颜色（手动添加的）
 
       &.active
-        border-right-color: darken($cyan, 100%)
+        // border-right-color: darken($cyan, 100%)
+        border-right-color: $cyan //鼠标选中时方框最右侧的颜色
         background: $cyan //目录鼠标选中时的背景颜色
         color: $white //目录鼠标选中时的字体颜色
 
@@ -44,6 +46,7 @@
       margin-top: -.3rem
       padding-left: .6rem
       color: $cyan //“你已经读了 x%” 的颜色
+      color: rgb(222,231,333) //“你已经读了 x%” 的颜色
 
       .progress-notice
         margin-right: .4rem

@@ -12,7 +12,8 @@ author: foochane
 toc: true
 mathjax: false
 top: false
-cover: false
+top_img: /images/banner/0.jpg
+cover: /images/cover/7.jpg
 ---
 
 >大数据 Hadoop Hive Pig Kafka Spark PySpark SQL 集群管理器 PostgreSQL MongoDB Cassandra
