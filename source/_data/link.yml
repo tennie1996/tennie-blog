@@ -1,0 +1,13 @@
+class:
+  class_name: 友情链接
+  link_list:
+    1:
+      name: foochane
+      link: https://foochane.cn
+      avatar: /images/site/avatar.jpg
+      descr: 心若浮沉，浅笑安然。
+    2:
+      name: 洪卫の博客
+      link: https://sunhwee.com
+      avatar: https://sunhwee.com/hwsun.jpg
+      descr: UESTC CVer！  
