@@ -578,7 +578,7 @@ snackbar:
 
 #百度推送
 baidu_push:
-  enable: false
+  enable: true
 
 # https://instant.page/
 # prefetch預加載
