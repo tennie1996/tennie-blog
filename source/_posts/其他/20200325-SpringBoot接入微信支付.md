@@ -1,4 +1,17 @@
-
+---
+title: SpringBoot接入微信支付
+date: 2020-3-25 22:36
+urlname: 2020032501
+categories: Java
+tags:
+  - Java
+author: foochane
+toc: true
+mathjax: true
+top: false
+top_img: /images/banner/0.jpg
+cover: /images/cover/14.jpg
+---
 
 
 
@@ -198,10 +211,3 @@ public class WxPayController {
 }
 ```
 
-
-
-## 4 完整的代码地址
-
-代码地址：[https://github.com/foochane/aw-pay](https://github.com/foochane/aw-pay)
-
-这个代码只是简单的写controller层的代码，只是为了快速体验一下支付宝的接口调用，后期将进行具体的完善。

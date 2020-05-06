@@ -9,7 +9,7 @@ tags:
 author: foochane
 toc: true
 mathjax: true
-top: true
+top: false
 top_img: /images/banner/0.jpg
 cover: /images/cover/0.jpg
 ---
@@ -1454,7 +1454,7 @@ MySQL中定义数据字段的类型对你数据库的优化是非常重要的。
 
 MySQL支持多种类型，大致可以分为三类：数值、日期/时间和字符串(字符)类型。
 
-------
+
 
 ### 12.1 数值类型
 
@@ -1470,7 +1470,7 @@ BIT数据类型保存位字段值，并且支持MyISAM、MEMORY、InnoDB和BDB�
 
 ![](https://raw.githubusercontent.com/foochane/java-learning/master/image/数值类型.png)
 
-------
+
 
 ### 12.2 日期和时间类型
 
@@ -1482,7 +1482,7 @@ TIMESTAMP类型有专有的自动更新特性，将在后面描述。
 
 ![](https://raw.githubusercontent.com/foochane/java-learning/master/image/日期和时间类型.png)
 
-------
+
 
 ### 12.3 字符串类型
 
