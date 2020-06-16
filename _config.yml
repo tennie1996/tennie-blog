@@ -116,6 +116,7 @@ search:
   field: post
   content: true
 
+
 # 添加 RSS 订阅支持,主题中还使用到了 hexo-generator-feed 的 Hexo 插件来做 RSS
 feed:
   type: atom
