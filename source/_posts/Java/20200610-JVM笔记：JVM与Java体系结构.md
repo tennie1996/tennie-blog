@@ -35,9 +35,8 @@ Java 是目前应用最为广泛的软件开发平台之一。随着Java 以及J
 ### 1.2 Java：跨平台的语言
 
 
-![image.png](https://cdn.nlark.com/yuque/0/2020/png/910643/1593396272085-ed975338-a7c7-46ab-a0ce-246363e0bf85.png)
 
-![image.png](https://cdn.nlark.com/yuque/0/2020/png/910643/1593396445824-3d56780b-25a5-4ba7-9b59-b31bc82f732b.png)
+![image.png](https://foochane.cn/images/2020/005.png)
 
 - 随着Java7 的正式发布， Java 虚拟机的设计者们通过JSR 一292 规范基本实现在Java 虚拟机平台上运行非Java 语言编写的程序。
 - Java 虚拟机根本不关心运行在其内部的程序到底是使用何种编程编程编写的，它只关心“ 字节码” 文件。也就是说Java 虚拟机拥有语言无关性， 并不会单纯地与Java 语言“ 终身绑定” ， 只要其他编程语訁的编译结果满足并包含Java 虚拟机的内部指令集、符号表以及其他的辅助信息， 它就是一个有效的字节码文件， 就能够被虚拟机所识别并装载运行。
@@ -89,9 +88,9 @@ Java不是最强大的语言，但JVM是最强大的虚拟机。
 ### 2.3 JVM的位置
 JVM是运行在操作系统知识的，它没有和硬件直接交互。
 
-![image.png](https://cdn.nlark.com/yuque/0/2020/png/910643/1593398447921-4d2b377c-2195-4538-98b1-3bbe592ce6ab.png)
+![image.png](https://foochane.cn/images/2020/006.png)
 
-![image.png](https://cdn.nlark.com/yuque/0/2020/png/910643/1593398677281-26c4597c-4176-4f91-8c6f-14d13c53796a.png)
+![image.png](https://foochane.cn/images/2020/007.png)
 
 
 
@@ -106,21 +105,22 @@ JVM是运行在操作系统知识的，它没有和硬件直接交互。
 
 Java虚拟机是用来解释和运行字节码文件的，所以入口原材料是Class files（字节码文件），字节码文件首先进入类装载子系统，类装载子系统将字节码文件加载到内存（加载、链接、初始化）。在运行时数据区，方法区和堆是多个线程共享的，而对于虚拟机栈、本地方法栈、和程序计数器是每个线程都有一份的。<br />
 
-                       ![image.png](https://cdn.nlark.com/yuque/0/2020/png/910643/1593411121996-1dae1bcc-96a4-4f5b-ab9c-a8707264bf62.png)
+![image.png](https://foochane.cn/images/2020/008.png)
 
 
 
 更详细的结构图
 
-![](https://cdn.nlark.com/yuque/0/2020/webp/910643/1593398972734-d1a3b2c7-50b8-4494-9320-333a0b946571.webp#align=left&display=inline&height=1077&margin=%5Bobject%20Object%5D&originHeight=1077&originWidth=960&size=0&status=done&style=none&width=960)<br />
+![](https://foochane.cn/images/2020/009.png)
+
 
 
 
 ## 4 Java代码执行流程
 
-<br />Java编译器也可以称为前端编译器，JIT编译器也称为后端编译器。<br />
-<br />                 
-![image.png](https://cdn.nlark.com/yuque/0/2020/png/910643/1593399823125-3e552635-55b1-4da7-8c0c-6b7ad7351207.png?x-oss-process=image%2Fresize%2Cw_1084)
+<br />Java编译器也可以称为前端编译器，JIT编译器也称为后端编译器。
+               
+![image.png](https://foochane.cn/images/2020/010.png)
 
 - Java 编译器编译过程中， 任何一个节点执行失败就会造成编译失败。
 - 虽然各个平台的Java 虚拟机内部实现细节不尽相同， 但是它们共同执行的字节码内容却是一样的。
@@ -130,16 +130,17 @@ Java虚拟机是用来解释和运行字节码文件的，所以入口原材料�
 - 但不是所有代码都是解释执行的， JVM 对此做了优化。比如， 以Hotspot虚拟机来说， 它本身提供了JIT (Just In Time ）
 
 
-<br />                                    
-![image.png](https://cdn.nlark.com/yuque/0/2020/png/910643/1593403646749-1a9999ad-18a0-4252-9a39-a303ca23b787.png?x-oss-process=image%2Fresize%2Cw_694)
+                               
+![image.png](https://foochane.cn/images/2020/011.png)
 
-<br />操作系统只能识别机器指令，高级语言翻译成机器指令主要由执行引擎来完成的。目前市面上主流的虚拟机都采用了解释执行和编译执行并行的方式，解释器是主要用来保证响应时间的，直接针对字节码进行解释执行。JIT编译器针对某些代码是要反复执行的（热点代码），可以直接把要反复执行的代码编译成机器指令，在把机器指令放在方法区缓存起来（这里就出现了两次编译，第一次编译把java代码编译成字节码文件，第二次编译报字节码编译成机器指令），所以JIT编译器主要负责程序执行的性能。<br />
+操作系统只能识别机器指令，高级语言翻译成机器指令主要由执行引擎来完成的。目前市面上主流的虚拟机都采用了解释执行和编译执行并行的方式，解释器是主要用来保证响应时间的，直接针对字节码进行解释执行。JIT编译器针对某些代码是要反复执行的（热点代码），可以直接把要反复执行的代码编译成机器指令，在把机器指令放在方法区缓存起来（这里就出现了两次编译，第一次编译把java代码编译成字节码文件，第二次编译报字节码编译成机器指令），所以JIT编译器主要负责程序执行的性能。<br />
 
 
 
 ## 5 JVM的架构模型
-Java 编译器输入的指令流是一种基于栈的指令集架构，另一种是基于寄存器的指令集架构。<br />
-<br />具体来说： 这两种架构之间的区别：
+Java 编译器输入的指令流是一种基于栈的指令集架构，另一种是基于寄存器的指令集架构。
+
+具体来说： 这两种架构之间的区别：
 
 - 基于栈式架构的特点
    - 设计和实现更简单， 适用于资源受限的系统：
@@ -186,3 +187,9 @@ Java 虚拟机的启动是通过引导类加载器(bootstrap class loader) 创�
 - 由于操作系统出现错误而导致Java 虚拟机进程终上
 - 某线程调用Runtime 类或system 类的exit让方法， 或Runtime 类的halt方法， 并且Java 安全管理器也允许这次exit 或halt操作。
 - 除此之外， JNI （ Java Native lnterface) 规范描述了用JNI lnvocation API 来加载或卸载Java 虚拟机时， Java 虚拟机的退出情况。
+
+
+
+
+
+> 注：本文为[尚硅谷2020最新版宋红康JVM教程](https://www.bilibili.com/video/BV1PJ411n7xZ?p=2)学习笔记
