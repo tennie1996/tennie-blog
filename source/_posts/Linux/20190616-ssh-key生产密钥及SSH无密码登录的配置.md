@@ -13,7 +13,8 @@ author: foochane
 toc: true 
 mathjax: false
 top: false 
-cover: false
+top_img: /images/banner/0.jpg
+cover: /images/cover/12.jpg
 ---
 
 >SSH连接 ssh-key生成秘钥 无密码登录服务器 无密码访问git仓库
@@ -63,7 +64,7 @@ usage: ssh-keygen [-q] [-b bits] [-t dsa | ecdsa | ed25519 | rsa]
        ssh-keygen -k -f krl_file [-u] [-s ca_public] [-z version_number]
                   file ...
        ssh-keygen -Q -f krl_file file ...
-```	   
+```
 实际情况中也用不到那么多参数，指定加密类型和注释即可。
 例如：
 ```bash
@@ -94,7 +95,7 @@ The key's randomart image is:
 执行完`ssh-keygen`之后会在，用户目录下的`.ssh`文件下，生成一个`id_rsa`文件和`id_rsa.pub`文件。
 - `id_rsa`文件是私钥，要保存好，放在本地，私钥可以生产公钥，反之不行。
 - `id_rsa.pub`文件是公钥，可以用于发送到其他服务器，或者git上。
-	   
+	
 ## 2 ssh设置无密码登录服务器
 
 将之前在本地生成的公钥`id_rsa.pub`,发送到需要无密码登录的服务器，然后将`id_rsa.pub`的内容追加到服务器的`~/.ssh/authorized_keys `文件中即可。
